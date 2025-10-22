@@ -1,1 +1,1 @@
-## Klasy, identyfikatory, tekst i czcionka
+## HTML ,CSS – tekst i czcionka, identyfikatory i klasy.
