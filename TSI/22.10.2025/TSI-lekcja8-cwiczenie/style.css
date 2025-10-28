@@ -1,0 +1,53 @@
+/* Styl dla całego dokumntu */
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Styl dla identyfikatora */
+#tytul {
+    text-align: center;
+    color: rgb(0, 0, 56);
+    font-size: 32px;
+}
+
+/* Styl dla klasy */
+.wstep {
+    font-style: italic;
+    color: #555;
+}
+
+/* Klasa wspólna dla nagłówków */
+.naglowek {
+    color: darkgreen;
+    text-transform: uppercase;
+}
+
+/* Styl dla elementu z klasą podkreslony */
+.podkreslony {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Styl dla identyfikatora info */
+#info {
+    background-color: #e0f7fa;
+    border-left: 5px solid #00897b;
+    padding: 10px;
+}
+
+/* Styl dla stopki */
+.stopka {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Styl dla klasy uwaga */
+.uwaga {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
