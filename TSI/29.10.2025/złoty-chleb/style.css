@@ -1,0 +1,60 @@
+/* Podstawowe resetowanie marginesów */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tło strony */
+body {
+    background-color: #fff8e1;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #5d4037; /* domyślny kolor tekstu zbliżony do akapitów */
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Nagłówki */
+header h1 {
+    color: #796648;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* Akapit - ustawienie czcionki i koloru */
+p {
+    font-family: Arial, sans-serif;
+    color: #5d4037;
+    margin-bottom: 12px;
+}
+
+/* Lista wypieków */
+ul {
+    list-style: none; /* bez kropek */
+    padding: 10px; /* margines wewnętrzny 10px */
+    margin-bottom: 10px;
+}
+
+/* Opcjonalne style dla elementów listy */
+ul li {
+    padding: 6px 0;
+}
+
+/* Obrazek chleba */
+img {
+    width: 300px;
+    max-width: 100%;
+    border: 2px solid #795548;
+    border-radius: 10px;
+    display: block;
+    margin: 12px auto;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    background-color: #d7ccc8;
+    padding: 10px;
+    margin-top: 24px;
+    border-radius: 6px;
+}
