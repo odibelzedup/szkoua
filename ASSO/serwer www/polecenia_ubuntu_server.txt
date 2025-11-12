@@ -1,1 +1,47 @@
+1. apt update
+2. apt upgrade
+3. apt install apache2 php7.4 libapache2-mod-php
+4. systemctl status apache2 (sprawdza status usługi apache2)
+5. adduser bolek
+6. adduser lolek
+7. su bolek
+8. mkdir /home/bolek/public_html/
+9. touch /home/public_html/index.html
+10. nano /home/bolek/public_html/index.html
+11. su
+12. su lolek
+13. mkdir /home/lolek/public_html/
+14. touch /home/lolek/public_html/index.html
+15. nano /home/lolek/public_html/index.html
+16. su
+17. systemctl restart apache2
+18. a2enmod  userdir
+19. apt install lynx
+20. lynx 127.0.0.1~bolek/index.html
+21. mkdir /var/www/html/imie.edu/
+22. mkdir /var/www/html/nazwisko.edu/
+23. touch /var/www/html/ime.edu/index.html
+24. nano /var/www/html/imie.edu/index.html
+25. touch /var/www/html/pelant.edu/index.html
+26. nano /var/www/html/nazwisko.edu/index.html
+27. cd /etc/apache2/sites-avaivable/
+28. -l
+29. cp 000-default.conf imie.edu.conf
+30. cp 000-default.conf nazwisko.edu.conf
+31. nano imie.edu.conf
 
+ServerAdmin webmaster@imie.edu
+DocumentRoot /var/www/html/imie.edu/
+ServerName imie.edu
+ServerAlias www.imie.edu
+
+32. nano nazwisko.edu.conf
+
+ServerAdmin webmaster@nazwisko.edu
+DocumentRoot /var/www/html/nazwisko.edu/
+ServerName nazwisko.edu
+ServerAlias www.nazwisko.edu
+
+33. a2ensite imie.edu.conf
+34. a2ensite nazwisko.edu.ocnf
+35. a2dissite 0000 tab
