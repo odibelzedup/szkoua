@@ -1,0 +1,60 @@
+1. apt update
+2. apt upgrade
+3. mkdir /skrypty
+4. touch /skrypty/skrypt1.sh
+5. chmod a+x /skrypty/skrypt1.sh
+6. nano /skrypty/skrypt1.sh
+7. Pisanie skryptu
+
+#!/bin/bash
+
+#[tutaj deklaracja wszystkich zmiennych]
+opcja="1"
+userid=$(id -u)
+delay time=2
+system_info_file="Info.txt"
+group_name=" "
+user_name=" "
+file_name=" "
+content=" "
+#[tutaj deklaracja funkcji]
+function system_info()
+{
+        echo "*** informacje o systemie ***" > $system_info_file
+        echo "Uruchomione procesy: " $system_info_file
+        ps -aux >> 4system_info_file
+}
+function print_info()
+{
+        cat $system_info_file
+}
+funtion add_group()
+{
+        echo "podaj nazwe grupy"
+        read group_name
+        groupadd $group_name
+}
+function add_user()
+{
+        echo "Podaj nazwe użytkownika"
+        read user_name
+        adduser $user_name
+}
+function delete_user()
+{
+        echo "Podaj nazwe użytkownika"
+        read user_name
+        userdel $user_name
+}
+function add_file()
+{
+        echo "Podaj nazwe pliku"
+        read file_name
+        echo "Wpisz zawartość"
+        read content
+        echo $content > $file_name
+}
+
+#[tutaj główna pętla skryptu]
+
+until [ "$opcja" -eq "0" ]; do
