@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Poprawianie błędów </title>
+	</head>
+	<body>
+		<script type='text/javascript'>
+			function dzielenie() {
+				var a=parseFloat(document.dane.l1.value);
+				//alert("a="+a)
+				var b=parseFloat(document.dane.l2.value);
+				//alert("b="+b)
+				if (b==0) {
+					//alert ("b="+b);
+					document.write("liczba b="+b+"nie dziel przez zero");
+				}
+				else {
+					//alert ("b="+b);
+					var c=a/b;
+					alert("wynik dzielenia liczby: "+a+"przez liczbę: "+b+"wynosi: "+c);
+				}
+			}
+		</script>
+		<form name="dane">
+			podaj liczbę do dzielenia <input type="text" name="l1" value=""> <p>
+			podaj liczbę dzieloną <input type="text" name="l2" value=""> <p>
+			<input type="button" value="licz" onClick="dzielenie()">
+		</form>
+	</body>
+</html>
